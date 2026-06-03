@@ -1,0 +1,77 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+.container{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.counter{
+width:420px;
+background:#e5e5e5;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.counter h1{
+background:linear-gradient(135deg,#2c2c2c,#3a3a3a);
+color:white;
+text-align:center;
+padding:30px;
+font-size:2rem;
+}
+
+.content{
+text-align:center;
+padding:40px 20px;
+}
+
+.counterNumber{
+font-size:80px;
+color:#888;
+margin-bottom:40px;
+}
+
+.btn{
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+button{
+padding:15px 35px;
+border:none;
+border-radius:12px;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+.add{
+background:#43a56b;
+color:white;
+}
+
+.reset{
+background:#2c2c2c;
+color:white;
+}
+
+.sub{
+background:#2c2c2c;
+color:white;
+}
