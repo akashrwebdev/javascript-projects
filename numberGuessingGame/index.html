@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="content">
+
+            <header class="header">
+                <h1>🎯 Guess the Number</h1>
+                <div class="line"></div>
+                <p>Guess a number between 1 and 100</p>
+            </header>
+
+            <div class="card">
+
+                <p class="info">
+                    I'm thinking of a number between 1 and 100. Try to guess it!
+                </p>
+
+                <hr>
+
+                <h3>Enter your guess:</h3>
+
+                <div class="inputFeed">
+                    <input id="input" type="number" min="1" max="100" placeholder="Enter number">
+                    <button class="guess">Guess</button>
+                </div>
+
+                <hr>
+                <p class="result">
+                    <span class="highlight">Too high!</span> 
+                    <span class="message">Try a smaller number.</span>
+                </p>
+                <hr>
+
+                <p class="attempts">Attempts: 2</p>
+
+            </div>
+
+        </div>
+
+        <div class="gameOver hidden">
+            <h2>Game Over</h2>
+            <p>You used all attempts</p>
+            <button class="restart">Restart</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

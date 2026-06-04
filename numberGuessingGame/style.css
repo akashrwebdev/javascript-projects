@@ -1,0 +1,160 @@
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+height:100%;
+}
+
+.container{
+height:100%;
+background:#8faed6;
+display:flex;
+justify-content:center;
+align-items:center;
+position: relative;
+}
+
+.content{
+width:100%;
+max-width:700px;
+padding-bottom: 100px;
+}
+
+.header{
+color:white;
+text-align:center;
+margin-bottom:25px;
+}
+
+.header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.line{
+height:2px;
+width:100%;
+max-width:600px;
+margin:auto;
+background:linear-gradient(
+to right,
+transparent,
+white,
+transparent
+);
+}
+
+.header p{
+margin-top:10px;
+font-size:18px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+padding:30px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.info{
+font-size:18px;
+margin-bottom:15px;
+color: #464646ce;
+}
+
+hr{
+margin:20px 0;
+border:none;
+border-top:1px solid #ddd;
+}
+
+h3{
+    padding-bottom: 10px;
+    color: #464646ce;
+}
+
+.inputFeed{
+display:flex;
+gap:15px;
+}
+
+input{
+flex:1;
+padding:12px;
+font-size:20px;
+border-radius:6px;
+border:1px solid #ccc;
+text-align:center;
+}
+
+.guess{
+padding:12px 25px;
+font-size:18px;
+border:none;
+border-radius:6px;
+background:linear-gradient(#3a8ef6,#2566d6);
+color:white;
+cursor:pointer;
+}
+
+.guess:hover{
+opacity:0.9;
+}
+
+.result{
+color:red;
+font-weight:bold;
+}
+
+.highlight{
+  font-weight: bold;
+  font-size: 22px;
+  color: red;
+}
+
+.attempts{
+text-align:center;
+color:#555;
+font-weight: bold;
+}
+
+.gameOver {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #131212eb;
+    color: #ff0000;
+    
+}
+
+.gameOver h2 {
+    font-size: 65px;
+    font-weight: bold;
+}
+.gameOver p {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 27px;
+}
+
+.restart {
+    height: 50px;
+    width: 100px;
+    border-radius: 18px;
+    background-color: #06acdadc;
+    border: 2px solid wheat;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
