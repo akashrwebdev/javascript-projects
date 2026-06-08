@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Smart Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🧠 Smart Task Manager</h1>
+
+        <div class="card">
+
+            <div class="input-area">
+                <input id="taskInput" placeholder="Write your task..." />
+                <button onclick="addTask()">Add +</button>
+            </div>
+
+            <div class="controls">
+                <input id="search" placeholder="Search tasks..." oninput="renderTasks()" />
+
+                <select id="filter" onchange="renderTasks()">
+                    <option value="all">All Tasks</option>
+                    <option value="active">Active</option>
+                    <!-- <option value="completed">Completed</option> -->
+                </select>
+
+                <button class="danger" onclick="clearCompleted()">Clear</button>
+            </div>
+
+            <div id="stats"></div>
+
+            <ul id="taskList"></ul>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
